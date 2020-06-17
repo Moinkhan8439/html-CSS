@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<!-- here we have defined the character used i.e utf-8  -->
+<meta charset="utf-8">
+<!-- declared the title of the webpage  -->
+<title>
+	vanilla cake recipe
+</title>
+<style>
+	body{
+		background-color: black;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.head {
+		background-image: url('images/images.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		border: 3px groove green;
+		margin-bottom:0;
+	}
+	.head .bg-text{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		border: 3px solid wheat;
+		font-size: 25px;
+		font-style: italic;
+		color:whitesmoke;
+		margin:15% 12%;
+		padding:5% 7%;
+	}
+	#navbar{
+		margin: 0px;
+		height:7%;
+		background-color:lightblue;
+		font:white;
+		font-size:25px;
+		display:flex;
+		justify-content: space-around;
+	}
+	#navbar li{
+		background-image: url('images/pngbarn.png');
+		background-size: 100% 100%;
+		padding:5px;
+	}
+	 a:visited{
+		color:maroon;
+	}
+	a:hover{
+		color:white;
+		background-color: black;
+	}
+	/* header ends here including navbar*/
+
+	/* MAIN STARTS */
+	main{
+		border:3px groove rgba(0, 128, 58, 0.582);
+		background-color:thistle;
+		text-align:center;
+		font-size: 25px;
+	}
+	main h2{
+		background-color:rgba(0,0,0,0.4);
+		font-size: 30px;
+		color:antiquewhite;
+		margin:0px;
+	}
+	main .ordered{
+		list-style: lower-roman;
+		list-style-position:inside;
+	}
+	article{
+		display: flex;
+		border:2px groove black;
+	}
+	.mid1{
+		text-align: left;
+		width:50%;
+		background-color:whitesmoke;
+		padding: 0px 10px;
+		margin-right: 5px;
+	}
+	#starting span{
+		background-color:cornflowerblue;
+		font-style: italic;
+	}
+	#starting .first{
+		font-style: normal;
+		color:red
+	}
+	#starting span:last-child{
+		text-decoration-line: underline;
+	}
+	#starting .outstanding{
+		height:auto;
+		width: 50%;
+		border:3px solid white;
+		float:right;
+		margin-left:5%;
+	}
+	.mid2{
+		width:50%;
+		padding: 25px;
+		background-image: url('images/bg-image.jpg');
+		background-size: cover;
+	}
+	#Ingredients{
+		padding: 20px;
+		background-image: url('images/bg-image1.jpg');
+		background-size: cover;
+		margin-top: 0;;
+		border:2px groove black;
+	}
+	#Ingredients .unordered{
+		list-style-type: '🍰';
+		list-style-position: inside;
+	}
+	#Recipe{
+		text-align: left;
+		padding:20px;
+		border:2px groove black;
+	}
+
+	#Recipe .inside{
+		width:35%;
+		float:right;
+	}
+	 .inside img{
+		width:75%;
+	}
+/* NOTE STARTS*/
+	#note{
+		font-size: 25px;
+		background-color: red;
+		background-size: 2%;
+		color: blanchedalmond;
+	}
+
+/* main ends*/
+	.foot{
+		background-size:contain;
+		font-size: 25px;
+		padding:10px;
+		background-image: url('images/download.jpg');
+
+	}
+	.foot h3{
+		background-color: aquamarine;
+		font-size: 30px;
+		text-align: center;
+	}
+
+
+/*----------------------------------------------------------MAXWIDTH-BETWEEN-401-TO-750------------------------------------------------*/
+@media screen and (max-width:750px){
+	h1{
+			font-size:25px;
+		}
+		#navbar li{
+			background-image: none;
+			background-color:cadetblue;
+			border:2px solid black;
+			font-size: 20px;
+		}
+		main{
+			font-size: 18px;
+		}
+		article .mid1{
+			background-color:darkcyan;
+		}
+		main h2{
+			font-size:22px;
+		}
+		#Ingredients{
+			background-image: none;
+			background-color:indianred;
+		}
+		#Recipe{
+			background-color: chocolate;
+		}
+		#note{
+			font-size:18px;
+		}
+		.foot {
+			font-size: 18px;
+		}
+}
+
+
+/*----------------------------------------------------------MAXWIDTH-BETWEEN-401-TO-750-ENDS-------------------------------------------*/	
+	/*---------------------------------------------------------MAXWIDTH=400 --STARTS------------------------------------------------------*/
+	@media screen and (max-width: 400px){
+		h1{
+			font-size:20px;
+		}
+		#navbar li{
+			background-image: none;
+			background-color:coral;
+			border:2px solid black;
+			font-size: 15px;
+		}
+		#navbar, article{
+			flex-flow: column;
+		}
+		main{
+			font-size: 15px;
+		}
+		article .mid1{
+			width:100%;
+			height:auto;
+			background-color: aquamarine;
+		}
+		main h2{
+			font-size:20px;
+		}
+		article .mid2{
+			width:100%;
+			height:auto;
+		}
+		#Ingredients{
+			background-image: none;
+			background-color: teal;
+		}
+		#note{
+			font-size:15px;
+		}
+		.foot {
+			font-size: 15px;
+		}
+	}
+/*---------------------------------------------------------max-width=400 ends---------------------------------------------------------*/
+
+</style>
+</head>
+<body>
+<!-- HEADER --> -->
+<header class='head'>
+	<div class='bg-text'>
+		<h1 >
+			Recipe for making a cake.		
+		</h1>
+	</div>				
+</header>
+
+<ul id='navbar' style='list-style: none;'>
+	<li><a  href="#starting">Home</a></li>
+	<li><a href="#Ingredients">Ingredients</a></li>
+	<li><a href="#Recipe">Recipe</a></li>
+</ul>
+
+
+<main >
+	<article >
+		<div class='mid1'>
+			<p  id="starting">
+				With its outstanding vanilla flavor,
+				pillowy soft crumb, and <span class="first">creamy vanilla</span> buttercream,
+				this is truly the best vanilla cake I’ve ever had.
+				And after 1 bite, I guarantee you’ll agree.
+				<img class='outstanding' src="images/vanilla-cake-Recipe-4.jpg" alt ="vanilla-cake-600x900">
+				This recipe was long overdue. For all of the baking and celebrating that goes on around here, 
+				I had yet to share a classic Vanilla Cake recipe. This delicious cake can be served for birthdays, year-round parties, 
+				last minutes get-togethers, 
+				or just because. 
+				This Vanilla Cake is a great reminder that a traditional recipe, when done right, can be absolutely perfect.
+				
+				This recipe produces a Vanilla Cake that is<span>fluffy (almost spongy), light and moist</span> . 
+				The vanilla flavor is complemented by just a touch of almond extract (one of my favorite secret ingredients). 
+				This cake is made in a <span >9×13 sheet pan</span>, making it super easy to bake and decorate. 
+				It’s simple, homey and comforting, and it is begging to be part of your next celebration.
+			</p>
+		</div>
+
+		<div class='mid2'>
+			<h2 >What Makes it the Best Vanilla Cake?</h2>
+			<ol class='ordered' >
+				<li>Soft, light crumb from cake flour</li>
+				<li>Fluffy from extra egg whites</li>
+				<li>Buttery and cakey from creamed butter</li>
+				<li>Stick-to-your-fork moist from eggs & buttermilk</li>
+				<li>Extra flavor from pure vanilla extract</li>
+			</ol>
+		</div>
+	</article>
+			<!-- subheading  -->
+		<section id="Ingredients">
+			<h2>
+				Ingredients neeeded:-
+			</h2>
+			<!-- unordered list for ingredients -->
+			<ul class="unordered">
+				<li>6 eggs 🥚🥚🥚🥚🥚🥚</li>
+				<li>1.5 teaspoon baking powder 🥄</li>
+				<li>3 cups self-rising flour ⛾⛾⛾</li>
+				<li>1.5 cup unsalted butter 🧈⛾⛾</li>
+				<li>2 cups sugar⛾⛾</li>
+				<li>1 cup milk 🥛 </li>
+				<li>1 tablespoon vanilla extract 🥄</li>
+			</ul>
+		</section>
+			
+		<!-- end of Ingedients -->
+	
+		<!-- RECIPE -->
+	
+	
+		<section id="Recipe" >
+				<h2> Step to make the cake:-</h2>
+				<!-- the ordered list  of the steps to follows starts -->
+				<ol class='ordered' style="list-style-position: outside;">
+					<li>Pre-heat the oven to 350 degrees F. Lightly coat a 10-inch cake pan with butter and dust with all-purpose flour.</li>
+					<div class='inside'>
+						<img  src="https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/01/vanilla-cake-batter-600x900.jpg" alt="stiring the cake">
+					</div>
+					<li>Separate egg yolks from egg whites.</li>
+					<li>Beat egg whites until stiff peaks. Reserve.</li>
+					<li>Sift the flour, baking powder into a large mixing bowl.</li>			
+					<li>
+						Beat butter until light and fluffy, approximately 10 minutes.
+						Add sugar and mix together until light in color.
+						Add in the eggs yolks one at a time;
+						keep mixing until well combined. 
+						Add milk and vanilla gradually and continue beating until the mixture is very creamy.
+					</li>
+					<li>Add dry ingredients (flour and baking powder) 1 cup at the time.</li>
+					<li>Foil in egg whites just until combined.</li>
+					<li>
+						Pour batter into the prepared pan and 
+						bake until a wooden skewer inserted in the center comes out clean — 30 to 35 minutes.
+						Cool cake in the pan on a wire rack for 5 minutes.
+					</li>
+					<li>Un-mold and cool completely. Decorate as you like or enjoy as is.</li>
+					</ol>
+			<!-- end of the ordered lists  -->
+		</section>
+			
+			<!-- end of RECIPE -->
+		
+	
+	
+	<section id="note">
+		<!-- highligted the note keyword using strong tag -->
+	<marquee>
+		<strong>Note :</strong>
+	This recipe makes 1 rectangular 9x13 inch cake pan, or 1 round 10-inch cake pan, or 2 round 8 or 9-inch cake pan.
+	</marquee>	
+	
+	</section>
+</main>
+<!-- main ends-->
+
+<!--footer starts-->>
+<footer class='foot'>
+<h3>Here is the list of top 5 vanilla cake recipes</h3>
+<ul class='foot-unordered'>
+	<li><a href="https://sallysbakingaddiction.com/vanilla-cake/">https://sallysbakingaddiction.com/vanilla-cake/</a></li>
+	<li><a href="https://sugarspunrun.com/vanilla-cake-recipe/">https://sugarspunrun.com/vanilla-cake-recipe/</a></li>
+	<li><a href="https://bromabakery.com/how-to-make-the-best-vanilla-cake/">https://bromabakery.com/how-to-make-the-best-vanilla-cake/</a></li>
+	<li><a href="https://www.foodnetwork.com/recipes/food-network-kitchen/basic-vanilla-cake-recipe-2043654">https://www.foodnetwork.com/recipes/food-network-kitchen/basic-vanilla-cake-recipe-2043654</a></li>
+	<li><a href="https://preppykitchen.com/1448-2/">https://preppykitchen.com/1448-2/</a></li>
+</ul>
+	<p>if you like my recipe send us a emai to:<a href="mailto:moinkhan8439@gmail.com">mail</a></p>
+</footer>
+
+</body>
+</html>
