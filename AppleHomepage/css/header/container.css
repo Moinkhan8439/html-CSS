@@ -1,0 +1,83 @@
+ .container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container .outer{
+    text-decoration-line: none;
+    
+} 
+.container .outer:visited{
+    color:inherit;
+}
+
+.container .centered {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+  }
+.container .centered h1{
+    font-size:49px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.container .centered h2{
+    font-size:29px;
+    font-weight: 400;
+    margin:0;
+    justify-content: center;
+}
+.container .centered p{
+    font-size: 18px;
+    color:rgb(130,130,130);
+    margin:0;
+    margin-bottom: 20px;
+}
+.container .centered .inner{
+    text-decoration-line: none;
+    color:rgb(2,169,242);
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.container .centered .inner:visited{
+    color:rgb(2,169,242);
+    
+}
+
+.container .centered .inner:hover{
+    text-decoration-line: underline;
+}
+
+.table .container {
+    margin-left: 5px;
+    width:99%;
+    height:90%;
+}
+table #one h1{
+    font-size: 35px;
+    font-weight: 600;
+    color:black;
+}
+table #two h1{
+    font-size:35px;
+    color:white;
+}
+table #two h2{
+    font-size: 20px;
+    color: white;
+}
+.table #three h1{
+    font-size:35px;
+    color:black;
+}
+.table #four h1{
+    font-size: 35px;
+    color:black;
+}
+
+.table #six h1{
+    font-size: 35px;
+    color:black;
+}
